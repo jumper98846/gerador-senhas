@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <title>Gerador de Senhas</title>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5568e0"/>
+      <stop offset="1" stop-color="#1c2566"/>
+    </linearGradient>
+    <linearGradient id="brilho" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="forma"><rect x="8" y="8" width="112" height="112" rx="27"/></clipPath>
+  </defs>
+
+  <!-- Base: quadrado arredondado, estilo GNOME/libadwaita -->
+  <rect x="8" y="8" width="112" height="112" rx="27" fill="url(#fundo)"/>
+  <rect x="8" y="8" width="112" height="60" fill="url(#brilho)" clip-path="url(#forma)"/>
+
+  <!-- Sombra suave do cadeado -->
+  <rect x="32" y="62" width="64" height="46" rx="11" fill="#0b1040" opacity="0.28"/>
+
+  <!-- Argola -->
+  <path d="M44 62 V48 a20 20 0 0 1 40 0 V62" fill="none" stroke="#f4f6ff"
+        stroke-width="9" stroke-linecap="round"/>
+  <!-- Corpo -->
+  <rect x="32" y="58" width="64" height="46" rx="11" fill="#f4f6ff"/>
+
+  <!-- Três pontos: o campo de senha -->
+  <circle cx="49" cy="81" r="5.5" fill="#2d3aa3"/>
+  <circle cx="64" cy="81" r="5.5" fill="#2d3aa3"/>
+  <circle cx="79" cy="81" r="5.5" fill="#2d3aa3"/>
+</svg>
